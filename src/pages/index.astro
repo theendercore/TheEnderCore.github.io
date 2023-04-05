@@ -1,23 +1,36 @@
 ---
-import { StreamLink } from "../const";
+import Icon from "../components/Icon.astro";
+import Link from "../components/Link.astro";
+import { GitHubLink, LinkList, StreamLink, YouTubeLink } from "../const";
 import Layout from "../layouts/BaseLayout.astro";
 ---
 
 <Layout title="TheEnderCore">
-  <hero class="h-full flex items-center justify-center w-full relative">
+  <main class="h-full flex flex-col justify-center">
+    <div class="flex items-center relative">
+      <div>
+        <h1 class="text-[10rem] font-black font-sans text-[#9e4ec7]">
+          TheEnderCore
+        </h1>
 
-    <!-- <h1 class="text-[12rem] font-black absolute">
-      TheEnderCore
-    </h1> -->
-  </hero>
-  <main>
-    <p class="py-10">
-      Hello! My name is Ender. Im a Software dev, whos obsessed with coding <span
-        class="italic text-sm">(It's not a problem)</span
-      >. I love spending all day to just coding things. Im also a <a
-        href={StreamLink}
-        class="text-purple-400 font-bold hover:scale-150">Streamer</a
-      > as i find it very fun to streame me coding playing games.
-    </p>
+        <p class="text-[1.4rem] font-barlow p-20 pt-10 w-9/12">
+          <span class="text-2xl"> Hello! I'm Ender</span>
+          <br />
+          Im a <Link title="Software dev" href={GitHubLink} />, who's obsessed
+          with coding. I'm also a
+          <Link title="Streamer" href={StreamLink} />
+          as I find it very fun to streaming coding or playing games. Besides that
+          once in a blue moon I upload to
+          <Link title="Youtube" href={YouTubeLink} />.
+        </p>
+      </div>
+
+      <div class="w-[550px] absolute right-[-4rem]">
+        <img src="/eye.png" alt="eye" />
+      </div>
+    </div>
+    <ul class="flex gap-5 justify-center pt-16 text-xl">
+      {LinkList.map((i) => <Icon item={i} />)}
+    </ul>
   </main>
 </Layout>

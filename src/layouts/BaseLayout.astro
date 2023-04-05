@@ -4,7 +4,8 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-import "@fontsource/heebo"
+import "@fontsource/heebo";
+import "@fontsource/barlow";
 ---
 
 <!DOCTYPE html>
@@ -16,9 +17,9 @@ import "@fontsource/heebo"
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-[#110f12] text-white">
+  <body class="bg-[#0f0c12] text-[#f7eafb] fill-[#f7eafb] h-screen font-barlow">
     <main class="container m-auto px-5 h-screen">
-    <slot />
+      <slot />
     </main>
   </body>
 </html>

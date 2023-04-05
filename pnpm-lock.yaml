@@ -4,6 +4,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^3.1.1
     version: 3.1.1(astro@2.1.9)(tailwindcss@3.3.1)
+  '@fontsource/barlow':
+    specifier: ^4.5.9
+    version: 4.5.9
   '@fontsource/heebo':
     specifier: ^4.5.15
     version: 4.5.15
@@ -562,6 +565,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/barlow@4.5.9:
+    resolution: {integrity: sha512-Nzg7bpw6raZtNdHwvLIt6ue/Gas/tpsNyf7zrRvVdV38iOrtOip2aabO3lexEyiYkKjKrlqAjEyAtTrC2XfkRg==}
+    dev: false
 
   /@fontsource/heebo@4.5.15:
     resolution: {integrity: sha512-ms6Z2d7czWiOC50oIX13iw4hJ73i7VLuJRP5LOkcLe+4UCBKm6wxhd6k3pEQ0B8Cgio1gCWiazIgS3SlS1UuAg==}
