@@ -15,6 +15,7 @@ const LinkList = [
   { link: KoFiLink, icon: "ko-fi", alt: "Ko-fi" },
   { link: DiscordLink, icon: "discord", alt: "Discord" },
 ];
+
 export {
   StreamLink,
   YouTubeLink,
