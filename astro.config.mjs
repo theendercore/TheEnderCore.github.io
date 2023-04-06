@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: "https://theendercore.github.io",
-  // base: "/",
+  base: "/theendercore",
 });
