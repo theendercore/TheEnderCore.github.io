@@ -5,7 +5,7 @@ import Layout from "../layouts/BaseLayout.astro";
 ---
 
 <Layout title="TheEnderCore">
-  <main class="h-full flex flex-col justify-center items-center">
+  <main class="h-screen flex flex-col justify-center items-center">
     <h2 class="text-9xl text-[#9e4ec7] font-sans font-black pb-4">Music :</h2>
     <ul class="text-3xl flex gap-2 flex-col font-bold text-center">
       {MusicList.map((i) => <Sli url={i.url} text={i.text} />)}
