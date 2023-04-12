@@ -6,14 +6,18 @@ import Layout from "../layouts/BaseLayout.astro";
 ---
 
 <Layout title="TheEnderCore">
-  <main class="h-full flex flex-col justify-center">
-    <div class="flex items-center relative">
-      <div>
-        <h1 class="text-[10rem] font-black font-sans text-[#9e4ec7]">
+  <main class="md:h-screen flex flex-col justify-center">
+    <div class="flex flex-col items-center relative">
+      <div class="flex flex-col mg:flex-row text-center md:text-left">
+        <h1
+          class="2xl:text-[10rem] xl:text-9xl lg:text-7xl lg:pl-10 lg:pt-20 md:text-6xl text-5xl font-black font-sans text-[#9e4ec7] py-10"
+        >
           TheEnderCore
         </h1>
 
-        <p class="text-[1.4rem] font-barlow p-20 pt-10 w-9/12">
+        <p
+          class="text-[1.4rem] font-barlow lg:p-20 lg:pt-0 w-fill md:w-8/12 2xl:w-9/12"
+        >
           <span class="text-2xl"> Hello! I'm Ender<br /></span>
           Im a <Link title="Software dev" href={GitHubLink} />, who's obsessed
           with coding. I'm also a
@@ -24,11 +28,13 @@ import Layout from "../layouts/BaseLayout.astro";
         </p>
       </div>
 
-      <div class="w-[550px] absolute right-[-4rem]">
+      <div
+        class="w-[300px] lg:w-[400px] xl:w-[550px] md:absolute md:right-[-2rem] lg:right-[-4rem]"
+      >
         <img src="/eye.png" alt="eye" />
       </div>
     </div>
-    <ul class="flex gap-5 justify-center pt-16 text-xl">
+    <ul class="flex gap-5 justify-center py-16 text-xl">
       {LinkList.map((i) => <Icon item={i} />)}
     </ul>
   </main>
