@@ -16,6 +16,25 @@ const LinkList = [
   { link: DiscordLink, icon: "discord", alt: "Discord" },
 ];
 
+const MusicList = [
+  {
+    url: "https://www.youtube.com/playlist?list=PLMTbeUt8jXzUVHMTeBcFCEkZuPpvbenS_",
+    text: "Future Funk",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=xBhCaCuGJYM&list=PLBSKXsAq3uzssY34fI7ApQpbSSnH8_ZYv",
+    text: "Uamee (Hard Bass)",
+  },
+  {
+    url: "https://open.spotify.com/album/6Mkz4TqfcgHCgCyZKCJmqp?si=gGMP9jiVT8SvP_Ns7mmoyg",
+    text: "Martius Vacui",
+  },
+  {
+    url: "https://open.spotify.com/playlist/2C83TXfowpmw3ZZnBU1Ymy?si=1807f5f787ca4723",
+    text: "Stre Playlist (Dr Thestral Music)",
+  },
+];
+
 export {
   StreamLink,
   YouTubeLink,
@@ -25,5 +44,5 @@ export {
   KoFiLink,
   DiscordLink,
   LinkList,
+  MusicList,
 };
- 
